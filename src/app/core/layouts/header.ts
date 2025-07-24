@@ -1,13 +1,16 @@
 import {Component} from '@angular/core';
-import {RouterLink} from '@angular/router';
+import {LucideAngularModule, Menu, ShoppingCart} from 'lucide-angular';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.html',
+    styleUrl: './header.scss',
     imports: [
-        RouterLink,
+        LucideAngularModule,
     ],
 })
 export class HeaderComponent {
 
+    protected readonly Menu = Menu;
+    protected readonly ShoppingCart = ShoppingCart;
 }
