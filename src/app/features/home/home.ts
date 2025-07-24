@@ -1,12 +1,12 @@
 import {Component} from '@angular/core';
-import {RouterLink} from '@angular/router';
+import {HeroBanner} from '@features/home/components/hero-banner/hero-banner';
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.html',
     styleUrl: './home.scss',
     imports: [
-        RouterLink
+        HeroBanner
     ]
 })
 

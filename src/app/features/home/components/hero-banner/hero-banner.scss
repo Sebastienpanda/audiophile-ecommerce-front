@@ -1,0 +1,29 @@
+.hero-banner {
+    background: url("/home/mobile/image-header.jpg") center / cover no-repeat;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    text-align: center;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .overline {
+            color: rgba(255, 255, 255, .4);
+        }
+
+        .h3 {
+            font-size: 2.25rem;
+        }
+    }
+
+    .content {
+        margin: 24px 0;
+        color: rgba(255, 255, 255, .4);
+    }
+}

@@ -1,6 +1,5 @@
 *, html, body {
     font-family: 'Manrope', sans-serif;
-    color: var(--color-black);
     line-height: 1.5;
     font-weight: 400;
 }
@@ -35,7 +34,7 @@ h6 {
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 10px;
-    color: var(--color-orange-500);
+    font-size: 0.875rem;
 }
 
 .subtitle {
