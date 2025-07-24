@@ -1,0 +1,6 @@
+<button class="btn" [class]="type()" [disabled]="disabled()">
+    {{ label() }}
+    @if (type() === "tertiary") {
+        <lucide-icon [img]="ArrowRight" color="#d87d4a"/>
+    }
+</button>
