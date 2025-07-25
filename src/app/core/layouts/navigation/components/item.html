@@ -1,0 +1,11 @@
+<li class="li">
+    <div class="container-img">
+        <img [src]="icon()" [alt]="title()" class="img"/>
+    </div>
+    <div class="bottom">
+        <span>
+            {{ title() }}
+        </span>
+        <app-btn label="Shop" type="tertiary" [href]="urlBtn()"/>
+    </div>
+</li>

@@ -1,6 +1,15 @@
-<button class="btn" [class]="type()" [disabled]="disabled()">
-    {{ label() }}
-    @if (type() === "tertiary") {
-        <lucide-icon [img]="ArrowRight" color="#d87d4a"/>
-    }
-</button>
+@if (href()) {
+    <a [href]="href()" class="btn a" [class]="type()">
+        {{ label() }}
+        @if (type() === 'tertiary') {
+            <lucide-icon [img]="ArrowRight" color="#d87d4a"/>
+        }
+    </a>
+} @else {
+    <button class="btn" [class]="type()" [disabled]="disabled()">
+        {{ label() }}
+        @if (type() === 'tertiary') {
+            <lucide-icon [img]="ArrowRight" color="#d87d4a"/>
+        }
+    </button>
+}

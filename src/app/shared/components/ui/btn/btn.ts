@@ -13,5 +13,6 @@ export class BtnComponent {
     readonly label = input.required<string>()
     readonly type = input<'primary' | 'secondary' | 'tertiary'>('primary');
     readonly disabled = input(false);
+    readonly href = input<string | undefined>();
     protected readonly ArrowRight = ArrowRight;
 }

@@ -1,5 +1,24 @@
 <header class="header">
-    <lucide-icon [img]="Menu"/>
+    <lucide-icon [img]="Menu" class="menu" (click)="toggleMenu()"/>
     <img src="/shared/desktop/logo.svg" alt="Logo" class="logo"/>
-    <lucide-icon [img]="ShoppingCart"/>
+    <lucide-icon [img]="ShoppingCart" class="cart"/>
 </header>
+
+@if (open()) {
+    <div
+        class="backdrop"
+        (click)="toggleMenu()"
+        (keydown.enter)="toggleMenu()"
+        (keydown.space)="toggleMenu()"
+    ></div>
+    <nav class="nav">
+        <ul>
+            @for (item of data(); track item.title) {
+                <app-navigation-item
+                    [title]="item.title"
+                    [icon]="item.icon"
+                    [urlBtn]="item.urlBtn"/>
+            }
+        </ul>
+    </nav>
+}

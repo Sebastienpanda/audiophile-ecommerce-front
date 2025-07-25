@@ -4,6 +4,7 @@
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 0.813rem;
 
     &.primary {
         background-color: var(--color-orange-500);
@@ -27,8 +28,9 @@
 
     &.tertiary {
         background-color: transparent;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(0, 0, 0, .4);
         display: flex;
+        align-items: center;
         gap: 14px;
 
         &:hover {
@@ -40,4 +42,8 @@
         opacity: 0.5;
         cursor: not-allowed;
     }
+}
+
+.a {
+    padding: 0;
 }
