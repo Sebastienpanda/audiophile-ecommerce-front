@@ -1,0 +1,18 @@
+@use "utility/mixins" as *;
+
+.nav {
+    margin-top: 92px;
+
+    .ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 68px;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<nav class="nav container">
+    <ul class="ul">
+        @for (item of data(); track item.title) {
+            <li>
+                <app-navigation-item
+                    [title]="item.title"
+                    [urlBtn]="item.urlBtn"
+                    [icon]="item.icon"
+                />
+            </li>
+        }
+    </ul>
+</nav>

@@ -9,6 +9,10 @@
         width: 223px;
     }
 
+    @include desktop {
+        width: 350px;
+    }
+
     .container-img {
         width: 120px;
         height: 120px;

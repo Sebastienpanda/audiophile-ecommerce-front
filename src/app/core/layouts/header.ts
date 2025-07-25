@@ -18,7 +18,7 @@ export class HeaderComponent {
     protected readonly Menu = Menu;
     protected readonly ShoppingCart = ShoppingCart;
 
-    protected readonly open = signal(true);
+    protected readonly open = signal(false);
     protected readonly data = signal<NavigationData[]>(navigation)
 
     protected toggleMenu(): void {
