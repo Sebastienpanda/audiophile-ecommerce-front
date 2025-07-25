@@ -13,5 +13,5 @@ import {BtnComponent} from '@shared/components/ui/btn/btn';
 export class NavigationItem {
     readonly title = input.required<string>()
     readonly urlBtn = input.required<string>()
-    readonly icon = input.required<string>()
+    readonly icon = input<string>()
 }

@@ -14,6 +14,64 @@
     .menu, .cart {
         cursor: pointer;
     }
+
+    @include laptop {
+        max-width: 60em;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1.5rem 0;
+    }
+
+    @include desktop {
+        max-width: 70em;
+    }
+
+    .menu {
+        @include laptop {
+            display: none;
+        }
+    }
+
+    .nav-desktop {
+        display: none;
+
+        @include laptop {
+            display: block;
+            flex: 1;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 34px;
+
+            li {
+                text-transform: uppercase;
+                font-size: 0.813rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                transition: color 300ms ease-in-out;
+
+                &:hover {
+                    color: var(--color-orange-500);
+                }
+            }
+        }
+    }
+
+    .cart {
+        @include laptop {
+            flex: 1;
+            text-align: right;
+        }
+    }
+
+    .logo {
+        @include laptop {
+            width: 143px;
+            flex: 1;
+        }
+    }
 }
 
 .backdrop {
@@ -23,6 +81,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     top: 74px;
+
+    @include laptop {
+        display: none;
+    }
 }
 
 .nav {

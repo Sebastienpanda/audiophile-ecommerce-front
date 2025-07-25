@@ -1,6 +1,26 @@
 <header class="header">
     <lucide-icon [img]="Menu" class="menu" (click)="toggleMenu()"/>
-    <img src="/shared/desktop/logo.svg" alt="Logo" class="logo"/>
+    <div class="logo">
+        <a routerLink="/">
+            <img src="/shared/desktop/logo.svg" alt="Logo"/>
+        </a>
+    </div>
+    <nav class="nav-desktop" aria-label="Menu">
+        <ul>
+            <li>
+                <a routerLink="/">Shop</a>
+            </li>
+            <li>
+                <a routerLink="/headphones">Headphones</a>
+            </li>
+            <li>
+                <a routerLink="/speakers">Speakers</a>
+            </li>
+            <li>
+                <a routerLink="/earphones">Earphones</a>
+            </li>
+        </ul>
+    </nav>
     <lucide-icon [img]="ShoppingCart" class="cart"/>
 </header>
 
